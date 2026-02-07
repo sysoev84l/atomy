@@ -10,6 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
         </header>
         <main class="content">
             <div class="container">
-                <h1>Учет пллет для Мирада-Л</h1>
+                <h1 class="h1">Учет пллет для Мирада-Л</h1>
                 <?php
                 $data = $mysqli->query("SELECT * FROM pallet_accouting ORDER BY `date` ASC");
                 $total_inside;
@@ -45,40 +46,40 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                 }
                 ?>
                 <section class="section__form_add">
-                    <form class="form-add" action="assets/php/add-data.php" method="POST">
-                        <div class="form-group">
+                    <form class="form_add" action="assets/php/add-data.php" method="POST">
+                        <div class="add_data">
                             <label for="date">Дата</label>
-                            <input class="form-control" type="date" id="date" name="date" required>
+                            <input class="" type="date" id="date" name="date" required>
                         </div>
-                        <div class="form-group">
+                        <div class="add_data">
                             <label for="quantity">Количество</label>
-                            <input class="form-control" type="number" id="quantity" name="quantity" required>
+                            <input class="" type="number" id="quantity" name="quantity" required>
                         </div>
-                        <div class="radio-wrap">
-                            <div class="radio-title">Тип</div>
-                            <div class="radio-form">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="type" id="inside" value="1"
+                        <div class="radio__wrap">
+                            <div class="radio__title">Тип</div>
+                            <div class="radio__form">
+                                <div class="">
+                                    <input class="" type="radio" name="type" id="inside" value="1"
                                         checked>
-                                    <label class="form-check-label" for="inside">
+                                    <label class="" for="inside">
                                         приход
                                     </label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="type" id="outside" value="0">
-                                    <label class="form-check-label" for="outside">
+                                <div class="">
+                                    <input class="" type="radio" name="type" id="outside" value="0">
+                                    <label class="" for="outside">
                                         расход
                                     </label>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <button type="reset" class="form-control btn btn-primary">Сбросить</button>
+                        <div class="btns__wrap">
+                            <div class="btn_wrap">
+                                <button type="reset" class="btn">Сбросить</button>
                             </div>
-                            <div class="col-6">
-                                <button type="submit" class="form-control btn btn-primary">Применить</button>
+                            <div class="btn_wrap">
+                                <button type="submit" class="btn">Применить</button>
                             </div>
                         </div>
                     </form>
@@ -155,14 +156,26 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class='footer'>
             <div class="container">
-                <h2>footer</h2>
+                <div class="footer-wrap">
+                    <div class='git-hub'>
+                        <a href="https://github.com/sysoev84l/atomy.git" target='_blank' rel="noreferrer">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class='copyright'>
+                        &copy; Все права защищены
+                    </p>
+                    <div class='host-name-wrap'>
+                        <a href='' class='host-name'> </a>
+                    </div>
+                </div>
             </div>
         </footer>
 
     </div>
-
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
