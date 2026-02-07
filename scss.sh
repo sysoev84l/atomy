@@ -1,0 +1,1 @@
+sass --watch --style compressed ./assets/scss/style.scss:./assets/css/style.css
