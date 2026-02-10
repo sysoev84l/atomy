@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atomy Pallet Accouting</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
 </head>
@@ -56,7 +56,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                             <input class="" type="number" id="quantity" name="quantity" required>
                         </div>
                         <div class="radio__wrap">
-                            <div class="radio__title">Тип</div>
+                            <div class="radio__title">Тип:</div>
                             <div class="radio__form">
                                 <div class="">
                                     <input class="" type="radio" name="type" id="inside" value="1"
@@ -85,7 +85,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                     </form>
                 </section>
                 <section class="accouting_table">
-                    <h2>Обший итог</h2>
+                    <h2 class="h2">Обший итог</h2>
                     <table class="table">
                         <thead>
                             <tr>
@@ -108,7 +108,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                             </tr>
                         </tbody>
                     </table>
-                    <h2>Детализация</h2>
+                    <h2 class="h2">Детализация</h2>
                     <table class="table">
                         <thead>
                             <tr>

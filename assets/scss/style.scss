@@ -10,11 +10,7 @@ body {
     font-family: sans-serif;
 }
 
-.h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 800;
-}
+
 
 .container {
     width: 1170px;
@@ -56,14 +52,20 @@ body {
     }
 }
 
+.h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800px;
+    letter-spacing: 2px;
+}
+
 .content {
     flex: 1 1 auto;
+    margin: 30px;
 
-    h2 {
+    .h2 {
         text-align: center;
     }
-
-    margin: 30px;
 
 }
 
@@ -74,49 +76,84 @@ body {
 
     //width: 600px;
     .form_add {
+        width: 100%;
+
         .add_data {
             display: flex;
+            flex-direction: column;
             padding: 5px;
+            margin-bottom: 10px;
 
             label {
                 display: block;
-                width: 100px;
+                //width: 100px;
+                color: rgb(33, 37, 41);
+                font-style: 16px;
+                margin-bottom: 7px;
             }
 
             input {
                 display: block;
-                width: 120px;
+                width: 100%;
+                padding: 5.25px 10.5px;
+                background-color: #fff;
+                border-radius: 3.5px;
+                border-width: 1px;
+                border-color: rgb(206, 212, 218);
+                border-style: solid;
+                color: rgb(73, 80, 87);
+                font-family: monospace;
+                font-size: 14px;
             }
         }
 
         .radio__wrap {
             display: flex;
-            flex-direction: column;
+            //flex-direction: column;
 
             .radio__title {
                 display: flex;
                 justify-content: center;
+                margin-right: 10px;
             }
 
             .radio__form {
                 display: flex;
-                justify-content: space-between;
+
+                //justify-content: space-between;
+                div {
+                    margin-right: 10px;
+                }
             }
         }
 
         .btns__wrap {
+            margin-top: 10px;
             padding: 5px;
             display: flex;
             justify-content: space-between;
 
             .btn_wrap {
-                width: 90px;
+                width: 49%;
 
                 .btn {
                     width: 100%;
-                    padding: 3px 0;
+                    padding: 10px 0;
+                    color: #fff;
                     background-color: rgb(0, 123, 255);
                     border-radius: 5px;
+                    border-color: rgb(0, 123, 255);
+                    border-style: solid;
+
+                    &:hover {
+                        background-color: rgb(0, 105, 217);
+                        border-color: rgb(0, 98, 204);
+
+                    }
+
+                    &:focus {
+                        box-shadow: rgba(38, 143, 255, 0.5) 0px 0px 0px 2.8px;
+                    }
                 }
             }
 
@@ -200,30 +237,32 @@ body {
         width: 90%;
     }
 
-    .header-wrap {
-        .logo {
-            width: 40px;
-        }
+    .header {
+        padding: 10px;
 
-        .title {
-            h2 {
-                letter-spacing: 8px;
-                font-size: 18px;
+        .header__wrap {
+
+            .header__img_wrap {
+                width: 32px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .header__title {
+                h2 {
+                    font-size: 11px;
+                    letter-spacing: 1.5px;
+
+                }
             }
         }
     }
 
-    .itk-slider {
-        .number-text {
-            color: #000;
-            font-size: 8px;
-            padding: 2px 0 0 1px;
-        }
-
-        button {
-            width: 40px;
-            height: 40px;
-        }
+    .h1 {
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 
     .footer {
