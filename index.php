@@ -59,8 +59,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                             <div class="radio__title">Тип:</div>
                             <div class="radio__form">
                                 <div class="">
-                                    <input class="" type="radio" name="type" id="inside" value="1"
-                                        checked>
+                                    <input class="" type="radio" name="type" id="inside" value="1" checked>
                                     <label class="" for="inside">
                                         приход
                                     </label>
@@ -86,71 +85,75 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                 </section>
                 <section class="accouting_table">
                     <h2 class="h2">Обший итог</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">приход</th>
-                                <th scope="col">расход</th>
-                                <th scope="col">долг</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <?= $total_inside ?>
-                                </td>
-                                <td>
-                                    <?= $total_outside ?>
-                                </td>
-                                <td>
-                                    <?= $total_inside - $total_outside ?>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table__wrap">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">приход</th>
+                                    <th scope="col">расход</th>
+                                    <th scope="col">долг</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <?= $total_inside ?>
+                                    </td>
+                                    <td>
+                                        <?= $total_outside ?>
+                                    </td>
+                                    <td>
+                                        <?= $total_inside - $total_outside ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <h2 class="h2">Детализация</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Дата</th>
-                                <th scope="col">Тип</th>
-                                <th scope="col">Количество</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($data as $item) {
-                                if ($item['type']) {
-                                    echo "<tr>";
-                                    echo "<td>";
-                                    echo $item['date'];
-                                    echo "</td>";
-                                    echo "<td>";
-                                    echo 'Пришло';
-                                    echo "</td>";
-                                    echo "<td>";
-                                    echo $item['quantity'];
-                                    echo "</td>";
-                                    echo "</tr>";
-                                    $total_inside += $item['quantity'];
-                                } else {
-                                    echo "<tr>";
-                                    echo "<td>";
-                                    echo $item['date'];
-                                    echo "</td>";
-                                    echo "<td>";
-                                    echo 'Ушло';
-                                    echo "</td>";
-                                    echo "<td>";
-                                    echo $item['quantity'];
-                                    echo "</td>";
-                                    echo "</tr>";
-                                    $total_outside += $item['quantity'];
+                    <div class="table__wrap">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Дата</th>
+                                    <th scope="col">Тип</th>
+                                    <th scope="col">Количество</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                foreach ($data as $item) {
+                                    if ($item['type']) {
+                                        echo "<tr>";
+                                        echo "<td>";
+                                        echo $item['date'];
+                                        echo "</td>";
+                                        echo "<td>";
+                                        echo 'Пришло';
+                                        echo "</td>";
+                                        echo "<td>";
+                                        echo $item['quantity'];
+                                        echo "</td>";
+                                        echo "</tr>";
+                                        $total_inside += $item['quantity'];
+                                    } else {
+                                        echo "<tr>";
+                                        echo "<td>";
+                                        echo $item['date'];
+                                        echo "</td>";
+                                        echo "<td>";
+                                        echo 'Ушло';
+                                        echo "</td>";
+                                        echo "<td>";
+                                        echo $item['quantity'];
+                                        echo "</td>";
+                                        echo "</tr>";
+                                        $total_outside += $item['quantity'];
+                                    }
                                 }
-                            }
-                            ?>
-                        </tbody>
-                    </table>
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
 
             </div>
