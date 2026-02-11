@@ -171,11 +171,12 @@ body {
         border-bottom: 1px solid #000;
         width: 100%;
         border-spacing: 0;
+        border-radius: 5px;
         text-align: center;
         
         th {
             border-right: 1px #000 solid;
-            padding: 5px;
+            padding: 6px;
             text-transform: uppercase;
 
         }
@@ -184,7 +185,7 @@ body {
             width: 33.3%;
             border-right: 1px #000 solid;
             border-top: 1px #000 solid;
-            padding: 7px;
+            padding: 6px;
         }
     }
 }
