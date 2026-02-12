@@ -22,7 +22,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
     <!-- тип контента, по умолчанию используется article -->
     <meta property="og:type" content="article" />
     <!-- заголовок страницы, который будет выводится в записи социальной сети -->
-    <meta property="og:title" content="Учет пллет для Мирада-Л " />
+    <meta property="og:title" content="Учет пллет для Мирада-Л" />
     <!-- описание страницы -->
     <meta property="og:description" content="Учет пллет для Мирада-Л" />
     <!-- ссылка на изображение, которое будет публиковаться в записи -->
