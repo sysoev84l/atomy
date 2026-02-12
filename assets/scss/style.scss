@@ -166,25 +166,21 @@ body {
 
 .table__wrap {
     .table {
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
-        border-bottom: 1px solid #000;
+        background-color: rgb(69, 77, 85);
+        color: #fff;
+        font-size: 20px;
         width: 100%;
         border-spacing: 0;
         border-radius: 5px;
         text-align: center;
-        
-        th {
-            border-right: 1px #000 solid;
-            padding: 6px;
-            text-transform: uppercase;
 
+        th {
+            text-transform: uppercase;
         }
 
-        td {
-            width: 33.3%;
-            border-right: 1px #000 solid;
-            border-top: 1px #000 solid;
+        td, th {
+            border-bottom: rgb(114, 111, 111) 1px solid;
+            width: 33.33%;
             padding: 6px;
         }
     }

@@ -7,6 +7,6 @@ if (isset($_POST) && !empty($_POST)) {
 	$quantity = $_POST['quantity'];	
 	$sql = "INSERT INTO `pallet_accouting` (`date`, `type`, `quantity`) VALUES ('$date', '$type', '$quantity')";
 	$result = $mysqli->query($sql);
-	header("Location: " . get_sn());
+	header("Location: " . get_server_name());
 	//echo "<script>window.location.href=' " . get_sn(). "'</script>";
 }

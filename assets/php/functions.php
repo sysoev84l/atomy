@@ -1,5 +1,5 @@
 <?php
-function get_sn()
+function get_server_name()
 {
   if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on')
     $protocol = 'https://';
@@ -9,18 +9,5 @@ function get_sn()
 }
 function header_delay($delay = 10, $url = '')
 {
-  header("Refresh:" . $delay . "; URL=" . get_sn() . $url);
-}
-function print_r_pre($pre)
-{
-  echo "<pre>";
-  print_r($pre);
-  echo "</pre>";
-}
-
-function var_dump_pre($pre)
-{
-  echo "<pre>";
-  var_dump($pre);
-  echo "</pre>";
+  header("Refresh:" . $delay . "; URL=" . get_server_name() . $url);
 }
