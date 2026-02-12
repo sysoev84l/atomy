@@ -1,4 +1,5 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/functions.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
 ?>
 <!DOCTYPE html>
@@ -7,6 +8,29 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Author" content="Alexey" />
+    <!-- Авторские права -->
+    <meta name="Copyright" content="Alexy" />
+    <!-- Адрес автора -->
+    <meta name="Address" content="Россия, г. Мухасранск, ул. Пушкина, дом Калатушкина" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="10 day" />
+    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU" />
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article" />
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content="Учет пллет для Мирада-Л" />
+    <!-- описание страницы -->
+    <meta property="og:description" content="Учет пллет для Мирада-Л" />
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content="<?php echo get_server_name();?>" />
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content="<?php echo get_server_name();?>" />
+    <!-- название сайта -->
+    <meta property="og:site_name" content="<?php echo get_server_name();?>" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <title>Atomy Pallet Accouting</title>
     <link rel="stylesheet" href="./assets/css/style.css">
