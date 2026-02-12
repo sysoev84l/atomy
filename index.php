@@ -19,13 +19,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
             <div class="container">
                 <div class="header__wrap">
                     <div class="header__img_wrap">
-                        <img src="./assets/img/logo/dpd-logo.png" alt="">
+                        <a href="https://dpd.ru" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/logo/dpd-logo.png" alt="">
+                        </a>
                     </div>
                     <div class="header__title">
                         <h2>Atomy Pallet Accouting</h2>
                     </div>
                     <div class="header__img_wrap">
-                        <img src="./assets/img/logo/atomy-logo.png" alt="">
+                        <a href="https://www.atomy.ru" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/logo/atomy-logo.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,13 +62,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                         <div class="radio__wrap">
                             <div class="radio__title">Тип:</div>
                             <div class="radio__form">
-                                <div class="">
+                                <div class="radio__form_item">
                                     <input class="" type="radio" name="type" id="inside" value="1" checked>
                                     <label class="" for="inside">
                                         приход
                                     </label>
                                 </div>
-                                <div class="">
+                                <div class="radio__form_item">
                                     <input class="" type="radio" name="type" id="outside" value="0">
                                     <label class="" for="outside">
                                         расход
@@ -128,7 +132,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                                         echo $item['date'];
                                         echo "</td>";
                                         echo "<td>";
-                                        echo 'Пришло';
+                                        echo 'Приход';
                                         echo "</td>";
                                         echo "<td>";
                                         echo $item['quantity'];
@@ -141,7 +145,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                                         echo $item['date'];
                                         echo "</td>";
                                         echo "<td>";
-                                        echo 'Ушло';
+                                        echo 'Расход';
                                         echo "</td>";
                                         echo "<td>";
                                         echo $item['quantity'];

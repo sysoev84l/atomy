@@ -61,7 +61,7 @@ body {
 
 .content {
     flex: 1 1 auto;
-    margin: 30px;
+    margin: 30px 0 10px 0;
 
     .h2 {
         text-align: center;
@@ -74,7 +74,6 @@ body {
     justify-content: center;
     margin-top: 15px;
 
-    //width: 600px;
     .form_add {
         width: 100%;
 
@@ -86,9 +85,8 @@ body {
 
             label {
                 display: block;
-                //width: 100px;
                 color: rgb(33, 37, 41);
-                font-style: 16px;
+                font-size: 16px;
                 margin-bottom: 7px;
             }
 
@@ -107,7 +105,6 @@ body {
 
         .radio__wrap {
             display: flex;
-            //flex-direction: column;
 
             .radio__title {
                 display: flex;
@@ -118,8 +115,7 @@ body {
             .radio__form {
                 display: flex;
 
-                //justify-content: space-between;
-                div {
+                .radio__form_item {
                     margin-right: 10px;
                 }
             }
@@ -178,7 +174,8 @@ body {
             text-transform: uppercase;
         }
 
-        td, th {
+        td,
+        th {
             border-bottom: rgb(114, 111, 111) 1px solid;
             width: 33.33%;
             padding: 6px;
@@ -188,7 +185,7 @@ body {
 
 .footer {
     background: #164d7a;
-    padding: 10px 0;
+    padding: 5px 0;
     color: #fff;
 
     a {
@@ -266,14 +263,93 @@ body {
         }
     }
 
+    .content {
+        margin: 12px 0;
+    }
+
     .h1 {
         font-size: 12px;
         letter-spacing: 2px;
     }
 
+    .section__form_add {
+
+        margin-top: 8px;
+
+        .form_add {
+            .add_data {
+                padding: 2px;
+                margin-bottom: 5px;
+
+                label {
+                    display: block;
+                    color: rgb(33, 37, 41);
+                    font-size: 12px;
+                    margin-bottom: 3px;
+                }
+
+                input {
+                    padding: 3.25px 5.25px;
+                    font-size: 10px;
+                }
+            }
+
+            .radio__wrap {
+                font-size: 14px;
+
+                .radio__title {
+                    margin-right: 5px;
+                }
+
+                .radio__form {
+                    .radio__form_item {
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            margin-right: 3px;
+                        }
+
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .btns__wrap {
+                margin-top: 5px;
+                
+                .btn_wrap {
+                    width: 49%;
+
+                    .btn {
+                        width: 100%;
+                        padding: 5px 0;
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .h2 {
+        margin: 10px 0 5px 0;
+        font-size: 16px;
+    }
+
+    .table__wrap {
+        .table {
+            font-size: 12px;
+        }
+    }
+
     .footer {
         .footer-wrap {
             flex-wrap: wrap;
+
+            a {
+                font-size: 12px;
+            }
 
             .git-hub {
                 order: 2;
@@ -285,9 +361,9 @@ body {
                 order: 1;
                 flex: 0 1 100%;
                 margin: 0;
-                font-size: 14px;
+                font-size: 12px;
                 text-align: center;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
 
             .host-name-wrap {
