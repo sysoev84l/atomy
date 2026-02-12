@@ -3,4 +3,6 @@
 ***
 [GitHub](https://github.com/sysoev84l/atomy)
 [DPD в России](https://dpd.ru)
-![DPD в России](/assets/img/logo/dpd-logo.png)
+[logo]: /assets/img/logo/dpd-logo.png
+[dpd]: https:/dpd.ru
+[![DPD в России] [logo] [dpd]]
