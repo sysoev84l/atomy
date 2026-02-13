@@ -1,6 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/functions.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
+if (get_server_name() == 'http://f1230728.xsph.ru/') require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect_hosting.php";
+    else require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +63,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
             <div class="container">
                 <h1 class="h1">Учет пллет для Мирада-Л</h1>
                 <?php
-                $data = $mysqli->query("SELECT * FROM pallet_accouting ORDER BY `date` ASC");
+                $data = $mysqli->query("SELECT * FROM pallet_accouting ORDER BY `date` DESC");
                 $total_inside;
                 $total_outside;
                 foreach ($data as $item) {
