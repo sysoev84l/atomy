@@ -1,0 +1,1 @@
+browser-sync http://atomy.local --files "*.css,./assets/js/*.js,./assets/scss/*.scss,./assets/css/*.css,*.html,*.php,*.*"
