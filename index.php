@@ -1,7 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/functions.php";
-if (get_server_name() == 'http://f1230728.xsph.ru') require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect_hosting.php";
-    else require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
+if (get_server_name() == 'http://f1230728.xsph.ru')
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect_hosting.php";
+else
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +11,7 @@ if (get_server_name() == 'http://f1230728.xsph.ru') require_once $_SERVER['DOCUM
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="Author" content="Alexey" />
     <!-- Авторские права -->
     <meta name="Copyright" content="Alexy" />
@@ -27,11 +29,11 @@ if (get_server_name() == 'http://f1230728.xsph.ru') require_once $_SERVER['DOCUM
     <!-- описание страницы -->
     <meta property="og:description" content="Учет пллет для Мирада-Л" />
     <!-- ссылка на изображение, которое будет публиковаться в записи -->
-    <meta property="og:image" content="<?php echo get_server_name();?>" />
+    <meta property="og:image" content="<?php echo get_server_name(); ?>" />
     <!-- ссылка на текущую страницу -->
-    <meta property="og:url" content="<?php echo get_server_name();?>" />
+    <meta property="og:url" content="<?php echo get_server_name(); ?>" />
     <!-- название сайта -->
-    <meta property="og:site_name" content="<?php echo get_server_name();?>" />
+    <meta property="og:site_name" content="<?php echo get_server_name(); ?>" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <title>Atomy Pallet Accouting</title>
     <link rel="stylesheet" href="./assets/css/style.css">
