@@ -1,8 +1,8 @@
 <?php
 // $hostname = "localhost";
-$username;
-$password;
-$database;
+// $username;
+// $password;
+// $database;
 if (get_server_name() == 'http://f1230728.xsph.ru') {
     $username = "f1230728";
     $password = "6596sAv$#@";

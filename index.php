@@ -60,7 +60,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
         </header>
         <main class="content">
             <div class="container">
-                <h1 class="h1">Учет пллет для Мирада-Л</h1>
+                <h1 class="h1 outline-text">Учет паллет для Мирада-Л</h1>
                 <?php
                 $data = $mysqli->query("SELECT * FROM pallet_accouting ORDER BY `date` DESC");
                 $total_inside;
