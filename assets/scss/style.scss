@@ -275,10 +275,16 @@ body {
     }
 
     .h1 {
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 2px;
     }
 
+    .outline-text {
+        color: transparent;
+        -webkit-text-stroke: 0.5px black;
+        text-stroke: 0.5px black;
+        text-shadow: 1.1px 1.1px #6C757D;
+    }
     .section__form_add {
 
         margin-top: 8px;
