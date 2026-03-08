@@ -204,9 +204,16 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/php/connect.php";
                 </div>
             </div>
         </footer>
-
+        <div class="progress-wrapper">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
     </div>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/scroll-btn.js"></script>
 </body>
 
 </html>
